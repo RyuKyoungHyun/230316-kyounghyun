@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap');
+
+
+
+
+body {
+    background: url(./webImages/bodyback.jpg);
+}
+
+.container {
+    background-color: #fff;
+    margin: 20px auto;
+    width: 940px;
+    border: 4px solid #eeb0b0;
+}
+header {
+    height: 90px;
+    background-color: #7d1e6a;
+    color: white;
+    padding: 20px;
+    background-image: url(./webImages/leica.svg);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 25px 20px; 
+}
+header h1, header h2 {
+    margin: 0; 
+    text-indent: 110px;
+    line-height: 40px;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Pacifico', '맑은고딕', 돋움, cursive;
+}
+header h2 {
+    font-size: 38px;
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+}
+
+menu {
+    list-style:none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcd38;
+}
+menu li {
+    float: left;
+}
+li a {
+    text-decoration: none;
+    color:#7d1e6a;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+}
+li a:hover {
+    background-color: #e51824;
+}
+
+main {
+    background-color: #f1eee9;
+    float:left;
+    width: 617px;
+    border-right: 1px solid #e51824;
+    padding: 30px 20px;
+}
+main section {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+main section h3 {
+    color:#e51824;
+}
+main figure {
+    font-size: 14px;
+    font-style: italic;
+    background-color: white;
+    color: gray;
+    width: 290px; height: 216px;
+    border: 1px solid #e51824;
+    padding:6px;
+    text-align: right;
+    margin:0;
+    float: left;
+}
+figure img {
+    /* vertical-align: middlke; */
+    width: 290px; height: 190px;
+}
+main h2, main h3, main p {
+    margin-top: 0;
+    padding-left: 20px;
+    float: left;
+    width: 290px;
+}
+aside {
+    float: left;
+    width: 282px;
+}
+aside h2 {
+    font-size: 25px;
+    text-indent: 25px;
+    color: #e51824;
+    margin: 30px 0;
+    
+}
+aside ul{
+    margin-top: 30px;
+    list-style:none;
+    padding: 0;
+}
+aside ul li {
+    border-bottom: 1px solid #e51824; 
+}
+aside ul li a {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 15px;
+    
+}
+aside p {
+    font-size: 20px;
+    padding-left:20px;
+}
+
+footer {
+    clear: both;
+    background-color: #7d1e6a;
+    color: white;
+    padding: 10px 20px;
+}
+footer p {
+    margin: 0;
+}
