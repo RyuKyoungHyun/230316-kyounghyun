@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fluidLayout3</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            width: 1000px; height: 100vh;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .container > div {
+            float: left;
+        }
+        .container div:first-child {
+            background-color: blue;
+            color: white;
+            width: 100%; height: 33.33333%;
+        }
+        .container div:nth-child(n+2):nth-child(-n+4) {
+            background-color: rgb(89, 89, 255);
+            width: 32%; height: 30%;
+            margin: 0.33333%;
+        }
+        .container div:nth-child(n+5) {
+            background-color: skyblue;
+            width: 14%; height: 33%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1행</div>
+        <div>2행 1열</div>
+        <div>2행 2열</div>
+        <div>2행 3열</div>
+        <div>3행 1열</div>
+        <div>3행 2열</div>
+        <div>3행 3열</div>
+        <div>3행 4열</div>
+        <div>3행 5열</div>
+        <div>3행 6열</div>
+    </div>
+    
+</body>
+</html>

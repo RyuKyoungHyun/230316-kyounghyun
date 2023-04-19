@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fluidLayout2</title>
+    <style>
+        .box {
+            float: left;
+            height: 33.333333vh;
+        }
+        .box1 {
+            background-color: #215621;
+        }
+        .box2 {
+            background-color: #a216fe;
+        }
+        .box3 {
+            background-color: #983635;
+        }
+        div.box:nth-child(-n+3) {
+            width: 33.333333%;
+        }
+        div.box:nth-child(n+5) {
+            width: 25%;
+        }
+        .box4 {
+            width: 100%;
+            background-color: #df8914;
+        }
+        .box5 {
+            background-color: #c8f696;
+        }
+        .box6 {
+            background-color: #357986;
+        }
+        .box7 {
+            background-color: #e34613;
+        }
+        .box8 {
+            background-color: #f58963;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+    <div class="box box7">box7</div>
+    <div class="box box8">box8</div>
+</body>
+</html>
