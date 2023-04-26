@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+         article {
+            width: 500px; height: 500px;
+            background-color: #ff8a8a;
+            transition: 1s;
+            overflow: hidden;
+        }
+        .block {
+            height: 100px;
+            background-color: rgb(154, 154, 255);
+        }
+        input[type=checkbox]:checked ~ article {
+            height: 0;
+        } 
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <form>
+        <input type="checkbox" name="check" id="check">
+        <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+            <article>
+                <h2>:checked</h2>
+                <p>인간에 충분히 예가 있는가? 지혜는 귀는 하여도 꽃이 위하여서 열락의 고동을 운다. 반짝이는 품으며, 끝까지 두기 얼마나 이상 있으며, 길을 칼이다. 피부가 크고 안고, 맺어, 이것을 청춘은 이상이 열매를 피다.</p>
+            </article>
+        <div class="block">block</div>
+    </form>
+</body>
+</html>
