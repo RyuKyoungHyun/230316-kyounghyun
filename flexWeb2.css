@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+.container a {
+    display: block;
+}
+.container header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.container header .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+.container header .header_wrapper .logo img{
+    margin-left: 40px;
+    width: 160px;
+}
+.container header .header_wrapper .main_menu {
+    display: flex;
+    color: white;
+}
+.container header .header_wrapper .main_menu li a {
+    padding: 30px;
+}
+.container header .header_wrapper .side_menu ul {
+    color: white;
+    display: flex;
+    margin-right: 40px;
+}
+.container header .header_wrapper .side_menu ul a {
+    margin-right: 20px;
+}
+
+main {
+    text-align: center;
+}
+main .firstScreen {
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+main .firstScreen video {
+    width: 100vw;
+}
+main .firstScreen .txt-box {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 100px;
+}
+main .firstScreen ul {
+    position: absolute;
+    top: 50%; right: 0; transform: translateY(-50%);
+}
+main .firstScreen ul a {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background-color: rgba(46, 46, 46, 0.822);
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+main .firstScreen ul a:last-child {
+    margin-top: 20px;
+}
+main .firstScreen ul a:hover {
+    background-color: rgba(255, 217, 0, 0.699);
+}
+
+main :is(.part1, .part2, .part3, .part4) .part-title {
+    margin: 50px 0;
+}
+main :is(.part1, .part2, .part3, .part4) .part-title::before {
+    content: "";
+    display: block;
+    width: 18px; height: 3px;
+    background-color: #ff8a26;
+    margin: 0 auto;
+    transform: rotate(-66deg) skew(25deg);
+    margin-bottom: 20px;
+}
+main :is(.part1, .part2, .part3, .part4) .part-title h3 {
+    font-size: 30px;
+}
+main :is(.part1, .part2, .part3, .part4) .part-title p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+main .part1 .contentBox_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main .part1 .contentBox_wrapper .contentBox:not(:last-child){
+    border-right: 1px solid rgb(209, 209, 209);
+}
+main .part1 .contentBox_wrapper .contentBox{
+    padding: 50px;
+}
+main .part1 .contentBox_wrapper .contentBox .st-content {
+    font-size: 10px;
+}
+main .part1 .contentBox_wrapper .contentBox .st-content:after {
+    content: "";
+    display: block;
+    width: 20px; background-color: black;
+    border-bottom: 1px solid black;
+    margin: 20px auto;
+}
+
+main .part1 .contentBox_wrapper .contentBox .st-content span {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+main .part2 .wrapper {
+    position: relative;
+}
+main .part2 .contentBox {
+    background-color: #ddd;
+    width: 55%;
+    padding: 50px 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+main .part2 .contentBox .gallery {
+    display: flex;
+    justify-content: center;
+}
+main .part2 .contentBox .gallery li a {
+    padding: 0 10px;
+}
+main .part2 .content-inDes {
+    margin: 30px;
+}
+main .part2 .imageGroup {
+    display: flex;
+    justify-content: space-between;
+}
+main .part2 .more-btn {
+    position: absolute;
+    top:60%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f18d00;
+    padding: 10px 20px;
+    transition: 0.5s;
+    color: white;
+}
+main .part2 .more-btn:hover {
+    border-radius: 50px;
+}
+main .part2 .imageBox {
+    float: left;
+    position: absolute;
+    top: 0px;
+    right:0;
+    width: 50%;
+}
+main .part2 .imageBox img {
+    width: 100%;
+}
+
+main .part3 .contentBox .miniMenu {
+    display: flex;
+    justify-content: center;
+}
+main .part3 .contentBox .miniMenu li a {
+    padding: 10px 20px;
+}
+main .part3 .contentBox .miniMenu li a:hover {
+    color: #ff9500;
+}
+main .part3 .contentBox .row-moveScreen {
+    width: 80vw; height: 300px; background-color: #ddd;
+    margin: 20px auto;
+}
+main .part3 .contentBox .more-btn {
+    display: inline-block;
+    background-color: #f18d00;
+    padding: 10px 20px;
+    transition: 0.5s;
+    color: white;
+}
+main .part3 .contentBox .more-btn:hover {
+    border-radius: 50px;
+}
+
+main .part4 .contentBox {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+main .part4 .contentBox .informBox1 {
+    width: 35%;
+}
+main .part4 .contentBox .informBox2 {
+    width: 45%;
+}
+main .part4 .contentBox .informBox3 {
+    width: 20%;
+}
+footer {}
