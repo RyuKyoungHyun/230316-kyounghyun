@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+:root {
+  --font-size13: 0.8125rem;
+  --font-size14: 0.875rem;
+  --font-size15: 0.9375rem;
+  --font-size17: 1.063rem;
+  --font-size18: 1.125rem;
+  --font-size20: 1.25rem;
+  --font-size38: 2.375rem;
+  --font-size-count: 4.125rem;
+  --font-size-title: 2.875rem;
+
+  --point-color: rgb(253, 91, 27);
+}
