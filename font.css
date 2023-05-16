@@ -1,60 +1,30 @@
 @charset "utf-8";
 
-/* 'Play', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+/* 'Montserrat', 'Roboto' */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
-/* scDream, sans-serif; */
-@font-face {
-  font-family: "scDream";
-  src: url("../assets/fonts/SCDream3.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "scDream";
-  src: url("../assets/fonts/SCDream4.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "scDream";
-  src: url("../assets/fonts/SCDream6.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
-body {
-  font-family: "spoqahanSansNeo", sans-serif;
-}
-
+/* 'NanumSquare' */
 @font-face {
-  font-family: "spoqahanSansNeo";
-  src: url("../assets/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'NanumSquare';
+    src: url('./font/NanumSquareR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "spoqahanSansNeo";
-  src: url("../assets/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'NanumSquare';
+    src: url('./font/NanumSquareB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "spoqahanSansNeo";
-  src: url("../assets/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "spoqahanSansNeo";
-  src: url("../assets/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'NanumSquare';
+    src: url('./font/NanumSquareEB.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
