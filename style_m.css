@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+/* 'Montserrat', 'Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans Kr', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 8.400vw;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+article {
+    padding: 32px 26px;
+}
+
+section, figure, p {
+    line-height: 1.8;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header h1 {
+    height: inherit;
+    width: 75px;
+    text-indent: -9999px;
+    background: url('./images/logo.png') no-repeat 50% / cover; 
+}
+header .material-symbols-outlined {
+    font-size: 20px;
+}
+
+
+main .main-screen {
+    position: relative;
+    background-color: rgb(250,220,220);
+    text-align: center;
+    padding:100px 0;
+    margin-top: 60px;
+}
+main .main-screen h2 {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 11.573vw;
+    margin: 24px auto 18px;
+}
+main .main-screen h2:before {
+    text-transform: uppercase;
+    font-family: 'Noso Sans Kr', sans-serif;
+    color: rgba(0,0,0,0.5);
+    letter-spacing: 4px;
+    font-weight: 400;
+    content: "better creative";
+    font-size: 16px;
+    position: absolute;
+    bottom: calc(100% + 24px); left: 50%;
+    transform: translateX(-50%);
+}
+main .main-screen h2 span {
+    display: block;
+}
+main .main-screen .play-btn {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 3px 0px;
+    transition: 0.3s;
+}
+main .main-screen .play-btn svg {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+    width: 22%;
+    transition: 0.3s;
+}
+main .main-screen .play-btn:hover {
+    background-color: #61cae4;
+    transform: perspective(100px) translateZ(15px);
+}
+main .main-screen img {
+    width: 90%;
+}
+main .main-screen ol {
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    bottom: 13%;
+    display: flex;
+    justify-content: center;
+}
+main .main-screen ol li {
+    margin: 3px;
+}
+
+main .description {
+    text-transform: capitalize;
+    padding: 32px 26px;
+}
+main .description section {
+    padding: 16px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+main .description h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+main .img-group {
+    text-transform: capitalize;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+main .img-group .img-box {
+    position: relative;
+}
+main .img-group .img-box .overlay-wrapper {
+    /* font-family: 'Montserrat', sans-serif; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffbe;
+    top: 0; left: 0;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+main .img-group .img-box .overlay-wrapper h4 {
+    transition: transform 0.5s;
+    transform: translateY(-50px);
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+}
+main .img-group .img-box:hover .overlay-wrapper {
+    opacity: 1;
+    display: grid;
+}
+main .img-group .img-box:hover .overlay-wrapper h4 {
+    transform: translateY(0);
+}
+main .img-group .img-box .overlay-wrapper h4:hover 
+{
+    color: #61cae4;
+}
+
+main .business {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+main .business h2 {
+    font-size: 8.400vw;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+}
+main .business h2::after {
+    position: absolute;
+    text-align: center;
+    top: calc(100% + 24px); left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
+main .business > p {
+    margin-bottom: 96px;
+    padding: 0 12px;
+}
+main .business figure {
+    padding: 0 12px;
+}
+main .business figure .img-box {
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main .business figure .img-box :is(.slide-left, .slide-right) {
+    position: absolute;
+    width: 36px; 
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    opacity:0;
+}
+main .business figure .img-box:hover :is(.slide-left, .slide-right) {
+    opacity: 1;
+}
+main .business figure .img-box .slide-left {
+    left:5px;
+}
+main .business figure .img-box .slide-left::before {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    content: "\e5e0";
+    margin-left: 5px;
+    font-weight: bold;
+}
+main .business figure .img-box .slide-left:hover {
+    color: #fff;
+    background-color: black;
+}
+main .business figure .img-box .slide-right {
+    right: 5px;
+}
+main .business figure .img-box .slide-right::before {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    content: "\e5e1";
+    font-weight: bold;
+}
+main .business figure .img-box .slide-right:hover {
+    color: #fff;
+    background-color: black;
+}
+main .business figure figcaption {
+    padding: 24px;
+    margin-bottom: 22px; 
+}
+main .business figure figcaption h4{
+    font-weight: 600;
+}
+
+main .youtube {
+    display: grid;
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+}
+main .youtube p {
+    margin-bottom: 60px;
+}
+main .youtube iframe {
+    width: 100%;
+}
+
+main .service {
+    text-transform: capitalize;
+}
+main .service h2 {
+    position: relative;
+    margin-bottom: 98px;
+}
+main .service h2::after {
+    position: absolute;
+    text-align: center;
+    top: calc(100% + 48px); left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+}
+
+main .service figure {
+    box-shadow:
+        0px 2.1px 3.6px rgba(0, 0, 0, 0.031),
+        0px 5.8px 10px rgba(0, 0, 0, 0.045),
+        0px 13.9px 24.1px rgba(0, 0, 0, 0.059),
+        0px 46px 80px rgba(0, 0, 0, 0.09)
+    ;
+}
+main .service figure figcaption {
+    padding: 24px;
+}
+main .service figure figcaption h4 { 
+    font-weight: 600;
+}
+
+main .sponsor {
+    background-color: #f7f7f7;
+}
+main .sponsor-group {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+} 
+main .sponsor-group li {
+    padding: 20px 0;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+main .sponsor-group li:hover {
+    opacity: 1;
+}
+
+main  .location ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4.831vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+main  .location ul li {
+    text-align: center;;
+    width: 50%;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    transition: 0.1s;
+}
+main  .location ul li:hover {
+    padding: 8px 0 5px;
+    border-bottom: 4px solid rgb(219, 219, 219);
+    
+}
+main .location .factory-content {
+    padding: 48px 0;
+}
+main .location #map {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 30px
+}
+main .location .factory-content section {
+    line-height: 1.5;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+main .location .factory-content section h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main .talk {
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(105,169,197,0.8),rgba(105,169,197,0.8)), url('./images/talk-back.jpg') no-repeat fixed 50% 50% / cover;
+}
+main .talk h2 {
+    margin-bottom: 18px;
+}
+main .talk p {
+    padding: 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+main .talk .more-btn a {
+    margin-top: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    padding: 9px 32px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+main .talk .more-btn a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+footer .footer-top {
+    padding: 80px 12px;
+}
+footer .footer-top h2 {
+    width: 126px; height: 101px;
+    text-indent: -9999px;
+    background: url('./images/logo.png') no-repeat 50% 50% / contain;
+}
+footer .footer-top section {
+    padding-bottom: 50px;
+}
+footer .footer-top section:last-child {
+    padding-bottom: 0;
+}
+footer .footer-top section h3 {
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+footer .footer-top section p {
+    line-height: 1.5;
+}
+footer .footer-top section ul {
+    display: flex;
+}
+
+footer .footer-top section ul li {
+    width: 10%;
+    overflow: hidden;
+}
+footer .footer-top section ul li a {
+    display: flex;
+    align-items: center;
+
+}
+footer .footer-top section ul li a svg {
+    opacity: 0.7;
+    width: 14px;
+    aspect-ratio: 1 / 1;
+    transition: 0.2s;
+}
+footer .footer-top section ul li:hover a svg {
+    transform: translateY(-100%);
+}
+footer .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 40px 12px;
+    background-color: #f7f7f7;
+}
+footer .footer-bottom p:first-child {
+    margin-bottom: 16px;
+}
+footer .footer-bottom p a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+footer .talk-consult {
+    text-indent: -9999px;
+    position: fixed;
+    bottom: 5%; left: 5%;
+    width: 104px;
+    height: 48px;
+    background: url('./images/consult-btn.png') no-repeat 50% / cover;
+}
