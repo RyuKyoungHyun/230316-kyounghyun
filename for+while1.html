@@ -1,0 +1,18 @@
+<html>
+    <body>
+        
+        <script>
+            let num = prompt('원하시는 단을 입력해 주세요');
+            let para;
+            if (2 <= num && num <= 9) {
+                para = `<h2>---- ${num}단 -----</h2>`
+                for (let i = 1; i <= 9; i++) {
+                    para += `<p>${num} * ${i} = ${num * i}</p>`
+                }
+            } else {
+                alert('2~9 사이의 숫자를 입력해 주세요')
+            }
+            document.body.innerHTML = para;
+        </script>
+    </body>
+</html>
